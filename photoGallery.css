@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html, body {
+  padding: 10px;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 40px 20px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  /* text-decoration: none; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.photo-gallery > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-gallery > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
+  margin-top: 100px;
+}
+
+.photo-gallery .wide {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.photo-gallery .tall {
+  grid-row: span 2;
+}
+
+.photo-gallery .big {
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 2;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading h3 {
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .box .photo-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+/* img {
+  width: 300px;
+  height: 400px;
+} */
